@@ -129,7 +129,7 @@ body::before {
   background-attachment: fixed;
   animation-name: bgFadeIn;
   animation-duration: 2s;
-  filter: blur(0px);
+  filter: blur(30px);
 }
 @-moz-keyframes bgFadeIn {
   from {
