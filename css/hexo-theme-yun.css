@@ -644,9 +644,6 @@ body::before {
 .post-meta .icon {
   margin-bottom: -1px;
 }
-.post-meta .post-sticky-flag {
-  color: #f2711c;
-}
 .post-meta-item-icon {
   display: inline-block;
   color: var(--text-color, #333);
@@ -795,20 +792,6 @@ body::before {
   flex-direction: column;
   box-sizing: border-box;
 }
-.hty-card__actions {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  box-sizing: border-box;
-  min-height: 3rem;
-  border-top: 1px solid #fff;
-}
-#yuque-logo {
-  width: 35px;
-  height: 33px;
-  vertical-align: middle;
-  margin: 5px;
-}
 .planet-menu {
   border-radius: 50%;
   border: 2px solid #000;
@@ -881,6 +864,10 @@ body::before {
   margin: 0;
 }
 .post-card__actions {
+  display: flex;
+  align-items: center;
+  min-height: 3rem;
+  border-top: 1px solid rgba(0,120,231,0.05);
   padding-left: 1rem;
   padding-right: 1rem;
   justify-content: space-between;
@@ -900,17 +887,6 @@ body::before {
 .post-card img:hover {
   box-shadow: 0 2px 20px 0 rgba(0,0,0,0.12);
 }
-.post-card .yuque-link {
-  color: #25b864;
-}
-.post-card .bilibili-link {
-  color: #ff8eb3;
-}
-.post-card .bilibili-link .icon {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: -0.2rem;
-}
 .tag,
 .category {
   font-size: 0.8rem;
@@ -928,6 +904,16 @@ body::before {
 .category .icon {
   width: 0.8rem;
   height: 0.8rem;
+}
+.post-top-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #f2711c;
+}
+.post-top-icon .icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .post-collapse {
   position: relative;
@@ -1029,6 +1015,11 @@ body::before {
   position: relative;
   padding: 0.7rem 1.2rem;
 }
+.post-header .post-title .post-title-link .icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.4rem;
+}
 .post-header .post-title .post-title-link::before,
 .post-header .post-title .post-title-link::after {
   content: '';
@@ -1036,7 +1027,7 @@ body::before {
   width: 10px;
   height: 10px;
   opacity: 0;
-  border: 2px solid #d94f5c;
+  border: 2px solid;
   transition: 0.3s;
   transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
 }
