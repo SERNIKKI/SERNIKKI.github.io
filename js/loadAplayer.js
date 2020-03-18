@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         {
           name: "Bad Apple!!",
           artist: "のみこ / Masayoshi Minoshima",
-          url: "https://m10.music.126.net/20200319034529/4397e44771251ea501dbc4e5675f30a8/ymusic/035e/5253/000c/445bb92590e95ffdd8f77fdfbadef708.mp3",
+          url: "https://sharefs.yun.kugou.com/202003190356/a0692e1ac15f47f06a2b3a3d89ad898f/G144/M05/16/07/0A0DAFxD63CAUHE3AE4BJtx3ci0572.mp3",
           cover: "https://i.loli.net/2020/03/18/BjFfxIwEWQ7dnHa.png"
         },
          {
@@ -53,19 +53,19 @@ document.addEventListener("DOMContentLoaded", function() {
           {
             name: '秋姉妹のなく頃に in the autumn sky',
             artist: 'ばんばんしー',
-            url: 'https://m10.music.126.net/20200319033556/121d3243c30e283ce8c7eb68ebb623bf/ymusic/5353/510b/075f/d92f6aa51efa2b95755e0561806f5708.mp3',
+            url: 'https://sharefs.yun.kugou.com/202003190350/7a09b52e1a55cccedaf8965d5b41b725/G098/M04/1C/11/QpQEAFvTr7aAeH1aAD9CdcBlSjg769.mp3',
             cover: 'https://i.loli.net/2020/03/18/xf3DILBpgU5aVFK.png',
           },
           {
             name: '秋～華恋～',
             artist: 'α·Pav',
-            url: 'https://m10.music.126.net/20200319033646/29fdcf5b9a598f46a6cb05bcf83e1f9f/ymusic/cddb/7b88/0817/f77c9299633f432bb00ee232f8451eb9.mp3',
+            url: 'https://audio04.dmhmusic.com/71_53_T10047710186_128_4_1_0_sdk-cpm/cn/0207/M00/73/D3/ChR47FvOBemAHgOaAGRkJAdoreM198.mp3?xcode=61a584851604a74a60ab461550c70aed9c76f08',
             cover: 'https://i.loli.net/2020/03/18/4tEMocgjzf8NVO5.png',
           },
           {
             name: '横竖撇点折(泠鸢翻唱）（Cover：米白）',
             artist: '泠鸢yousa',
-            url: 'https://m10.music.126.net/20200319035057/8c86a6c5377b632d3440b6d88905a880/ymusic/545f/0f08/0259/c5de9c2f728b2ff3e83a534aad01239e.mp3',
+            url: 'https://sharefs.yun.kugou.com/202003190354/ce8554aba094d3f4a6b9f7195f96f986/G186/M02/0A/11/-g0DAF4tUB-Afav7ADf_7ikjKtI066.mp3',
             cover: 'https://i.loli.net/2020/03/18/9hrDgt7bGJj8Koy.jpg',
           }
       ]
