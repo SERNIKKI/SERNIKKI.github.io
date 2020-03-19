@@ -3,17 +3,23 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 神崎日照の小窝
+subtitle: 忘川之上，桑梓之下，一半是光，一半是影。
+description: 忘川之上，桑梓之下，一半是光，一半是影。
 keywords:
-author: John Doe
-language: en
-timezone: ''
+  - NIKKI
+  - Blog
+  - 日照
+  - 博客
+  - 日照的小窝
+  - blog.sernikki.cn
+author: NIKKI
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://sernikki.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -101,3 +107,35 @@ deploy:
   type: git
   repo: git@github.com:SERNIKKI/SERNIKKI.github.io.git
   branch: master
+
+  live2d:
+  enable: true
+  # 推荐使用 jsdelivr 的 CDN 来加载
+  scriptFrom: jsdelivr
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    # 推荐使用 CDN 来加载模型
+    use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+  react:
+    opacity: 0.7
+dialog:
+  # 是否开启对话框
+  enable: true
+  # 是否使用一言
+  hitokoto: true
+
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
