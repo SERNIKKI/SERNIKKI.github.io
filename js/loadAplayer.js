@@ -11,62 +11,62 @@ document.addEventListener("DOMContentLoaded", function() {
         {
           name: "Bad Apple!!",
           artist: "のみこ / Masayoshi Minoshima",
-          url: "https://sharefs.yun.kugou.com/202003190356/a0692e1ac15f47f06a2b3a3d89ad898f/G144/M05/16/07/0A0DAFxD63CAUHE3AE4BJtx3ci0572.mp3",
-          cover: "https://i.loli.net/2020/03/18/BjFfxIwEWQ7dnHa.png"
+          url: "https://cdn.jsdelivr.net/gh/SERNIKKI/MyMp3/%E3%81%AE%E3%81%BF%E3%81%93,Masayoshi%20Minoshima%20-%20Bad%20Apple!!.mp3",
+          cover: "https://i.loli.net/2020/03/19/T9mk17IBwaUndeW.jpg"
         },
          {
             name: '滲色血界、月狂ノ獄',
             artist: 'nayuta',
-            url: 'https://m10.music.126.net/20200319033446/23737cd2c1a6600349ad13c6359fcd8d/ymusic/6899/10ba/ed59/6c8ef8f0e4f5f4455374419a7f9daf7a.mp3',
+            url: 'https://cdn.jsdelivr.net/gh/SERNIKKI/MyMp3/nayuta%20-%20%E6%BB%B2%E8%89%B2%E8%A1%80%E7%95%8C%E3%80%81%E6%9C%88%E7%8B%82%E3%83%8E%E7%8D%84.mp3',
             cover: 'https://i.loli.net/2020/03/18/1GFVIl3M568jXyn.jpg',
           },
            {
             name: '白石溪',
             artist: '乐正绫 / 純白P / 洛天依',
-            url: 'https://m10.music.126.net/20200319034649/c7f997afb01e664794b09c2a67f700ff/ymusic/fd19/51e1/15b4/60362d9754494dfa2f3a9cf131879906.mp3',
-            cover: 'https://i.loli.net/2020/03/18/71RbqU98zgrDSOL.png',
+            url: 'https://cdn.jsdelivr.net/gh/SERNIKKI/MyMp3/%E4%B9%90%E6%AD%A3%E7%BB%AB%20-%20%E7%99%BD%E7%9F%B3%E6%BA%AA.mp3',
+            cover: 'https://i.loli.net/2020/03/19/rbuDziqC7vcKyda.jpg',
           },
           {
             name: '谷雨',
             artist: '桑葚上的猴子',
-            url: 'https://m10.music.126.net/20200319034808/89ad615dea18e5400f25e324f4776c35/ymusic/7c82/e510/ff29/0468d404bb1341e483eec7af4e316d99.mp3',
-            cover: 'https://i.loli.net/2020/03/18/CEIqzavcF6hkUdG.jpg',
+            url: 'https://cdn.jsdelivr.net/gh/SERNIKKI/MyMp3/%E6%A1%91%E8%91%9A%E4%B8%8A%E7%9A%84%E7%8C%B4%E5%AD%90%20-%20%E8%B0%B7%E9%9B%A8.mp3',
+            cover: 'https://i.loli.net/2020/03/19/NWBiJZLD3YOVuFP.jpg',
           },
           {
             name: '樱花樱花想见你',
             artist: '南杉',
-            url: 'https://m10.music.126.net/20200319034856/547bc94db5083f1ec2ffcd81643dd3c8/ymusic/2b22/1a51/e3f2/511c5af259638c4c0b5ceaaf6fb1a128.mp3',
-            cover: 'https://i.loli.net/2020/03/18/vaJQ1LsGehmEtRw.jpg',
+            url: 'https://cdn.jsdelivr.net/gh/SERNIKKI/MyMp3/%E5%8D%97%E6%9D%89%20-%20%E6%A8%B1%E8%8A%B1%E6%A8%B1%E8%8A%B1%E6%83%B3%E8%A7%81%E4%BD%A0.mp3',
+            cover: 'https://i.loli.net/2020/03/19/pMzsdvTn45wfjS8.jpg',
           },
           {
             name: 'うたかたの风と蝉时雨',
             artist: 'FELT',
-            url: 'https://m10.music.126.net/20200319033245/c552a7f48803fda7941639646e0fcf85/ymusic/0008/0e0f/5158/7bc9b766f59e5976b2e5f2536079c989.mp3',
-            cover: 'https://i.loli.net/2020/03/18/yX3lrcGAseKSWUY.png',
+            url: 'https://cdn.jsdelivr.net/gh/SERNIKKI/MyMp3/FELT%20-%20%E3%81%86%E3%81%9F%E3%81%8B%E3%81%9F%E3%81%AE%E9%A3%8E%E3%81%A8%E8%9D%89%E6%97%B6%E9%9B%A8.mp3',
+            cover: 'https://i.loli.net/2020/03/19/MXFV4NifyG8osq6.jpg',
           },
           {
             name: '土著神の顶点 ~Native Faith',
             artist: 'Like a rabbit',
-            url: 'https://m10.music.126.net/20200319035005/1a749bf1f0ac0d45f2ecc36c016bc475/ymusic/59f1/5e48/623d/ac68cc6944a450cfda7f6d2b984838c0.mp3',
-            cover: 'https://i.loli.net/2020/03/18/Ap51eaJx6V3BgfC.png',
+            url: 'https://cdn.jsdelivr.net/gh/SERNIKKI/MyMp3/%E5%9C%9F%E8%91%97%E7%A5%9E%E3%81%AE%E9%A1%B6%E7%82%B9.mp3',
+            cover: 'https://i.loli.net/2020/03/19/J8zkZalidVmSyho.jpg',
           },
           {
             name: '秋姉妹のなく頃に in the autumn sky',
             artist: 'ばんばんしー',
-            url: 'https://sharefs.yun.kugou.com/202003190350/7a09b52e1a55cccedaf8965d5b41b725/G098/M04/1C/11/QpQEAFvTr7aAeH1aAD9CdcBlSjg769.mp3',
-            cover: 'https://i.loli.net/2020/03/18/xf3DILBpgU5aVFK.png',
+            url: 'https://cdn.jsdelivr.net/gh/SERNIKKI/MyMp3/%E3%81%B0%E3%82%93%E3%81%B0%E3%82%93%E3%81%97%E3%83%BC%20-%20%E7%A7%8B%E5%A7%89%E5%A6%B9%E3%81%AE%E3%81%AA%E3%81%8F%E9%A0%83%E3%81%AB%20in%20the%20autumn%20sky.mp3',
+            cover: 'https://i.loli.net/2020/03/19/gL32JjyFY7QwlkW.jpg',
           },
           {
             name: '秋～華恋～',
             artist: 'α·Pav',
-            url: 'https://audio04.dmhmusic.com/71_53_T10047710186_128_4_1_0_sdk-cpm/cn/0207/M00/73/D3/ChR47FvOBemAHgOaAGRkJAdoreM198.mp3?xcode=61a584851604a74a60ab461550c70aed9c76f08',
-            cover: 'https://i.loli.net/2020/03/18/4tEMocgjzf8NVO5.png',
+            url: 'https://cdn.jsdelivr.net/gh/SERNIKKI/MyMp3/%CE%B1%C2%B7Pav%20-%20%E7%A7%8B%EF%BD%9E%E8%8F%AF%E6%81%8B%EF%BD%9E.mp3',
+            cover: 'https://i.loli.net/2020/03/19/4zecVXi8QM2KwYL.jpg',
           },
           {
             name: '横竖撇点折(泠鸢翻唱）（Cover：米白）',
             artist: '泠鸢yousa',
-            url: 'https://sharefs.yun.kugou.com/202003190354/ce8554aba094d3f4a6b9f7195f96f986/G186/M02/0A/11/-g0DAF4tUB-Afav7ADf_7ikjKtI066.mp3',
-            cover: 'https://i.loli.net/2020/03/18/9hrDgt7bGJj8Koy.jpg',
+            url: 'https://cdn.jsdelivr.net/gh/SERNIKKI/MyMp3/%E6%B3%A0%E9%B8%A2yousa%20-%20%E6%A8%AA%E7%AB%96%E6%92%87%E7%82%B9%E6%8A%98(%E6%B3%A0%E9%B8%A2%E7%BF%BB%E5%94%B1%EF%BC%89%EF%BC%88Cover%EF%BC%9A%E7%B1%B3%E7%99%BD%EF%BC%89.mp3',
+            cover: 'https://i.loli.net/2020/03/19/RvUcOBX7j2bQxzk.jpg',
           }
       ]
     });
