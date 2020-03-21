@@ -3,7 +3,6 @@ function initPage() {
   if (typeof ScrollReveal !== "undefined") {
     ScrollReveal().reveal(".post-card");
   }
-  Yun.utils.wrapImage();
   Yun.utils.embeddedVideoTransformer();
 
   // open sidebar
@@ -18,19 +17,15 @@ function initPage() {
 
   window.addEventListener(
     "scroll",
-    throttle(
-      function() {
-        const curTop = window.scrollY;
-        const goUp = document.querySelector("#go-up");
-        if (curTop > 64 && !goUp.style.opacity) {
-          goUp.classList.add("show");
-        } else {
-          goUp.classList.remove("show");
-        }
-      },
-      100,
-      200
-    ),
+    debounce(function() {
+      const curTop = window.scrollY;
+      const goUp = document.querySelector("#go-up");
+      if (curTop > 64 && !goUp.style.opacity) {
+        goUp.classList.add("show");
+      } else {
+        goUp.classList.remove("show");
+      }
+    }, 200),
     {
       passive: true
     }
