@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sernikki.github.io/"/>
-  <updated>2020-03-20T14:44:50.536Z</updated>
+  <updated>2020-03-22T11:45:50.729Z</updated>
   <id>http://sernikki.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>KMP算法</title>
+    <link href="http://sernikki.github.io/2020/03/22/KMP%E7%AE%97%E6%B3%95/"/>
+    <id>http://sernikki.github.io/2020/03/22/KMP%E7%AE%97%E6%B3%95/</id>
+    <published>2020-03-22T11:35:20.000Z</published>
+    <updated>2020-03-22T11:45:50.729Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="http://sernikki.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="数据结构" scheme="http://sernikki.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="算法" scheme="http://sernikki.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="串匹配" scheme="http://sernikki.github.io/tags/%E4%B8%B2%E5%8C%B9%E9%85%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>春分</title>
