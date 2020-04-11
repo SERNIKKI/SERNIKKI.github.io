@@ -1,4 +1,4 @@
-// rf hexo-theme-melody
+// https://codepen.io/juliangarnier/pen/gmOwJX
 // custom by hexo-theme-yun
 
 const numberOfParticules = 20;
@@ -20,50 +20,25 @@ let ctx = canvasEl.getContext("2d");
 let pointerX = 0;
 let pointerY = 0;
 
-let tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown'
+let tap =
+  "ontouchstart" in window || navigator.msMaxTouchPoints
+    ? "touchstart"
+    : "mousedown";
 
 // sky blue
-let colors = [
-  "102, 167, 221",
-  "62, 131, 225",
-  "33, 78, 194"
-];
+let colors = ["102, 167, 221", "62, 131, 225", "33, 78, 194"];
+if (CONFIG.fireworks.colors) colors = CONFIG.fireworks.colors;
 
-if (CONFIG.fireworks.colors) colors = CONFIG.fireworks.colors
-
-let setCanvasSize = function() {
+function setCanvasSize() {
   canvasEl.width = window.innerWidth;
   canvasEl.height = window.innerHeight;
   canvasEl.style.width = window.innerWidth + "px";
   canvasEl.style.height = window.innerHeight + "px";
-  canvasEl.getContext("2d").scale(1, 1);
-};
-
-let render = anime({
-  duration: Infinity,
-  update: function() {
-    ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
-  }
-});
-
-document.addEventListener(
-  tap,
-  function(e) {
-    render.play();
-    updateCoords(e);
-    animateParticules(pointerX, pointerY);
-  },
-  false
-);
-
-setCanvasSize();
-window.addEventListener("resize", setCanvasSize, false);
+}
 
 function updateCoords(e) {
-  pointerX =
-    (e.clientX || e.touches[0].clientX) - canvasEl.getBoundingClientRect().left;
-  pointerY =
-    e.clientY || e.touches[0].clientY - canvasEl.getBoundingClientRect().top;
+  pointerX = e.clientX || e.touches[0].clientX;
+  pointerY = e.clientY || e.touches[0].clientY;
 }
 
 function setParticuleDirection(p) {
@@ -84,7 +59,7 @@ function createParticule(x, y) {
     "rgba(" +
     colors[anime.random(0, colors.length - 1)] +
     "," +
-    anime.random(0.2, 0.6) +
+    anime.random(0.2, 0.8) +
     ")";
   p.radius = anime.random(minCircleRadius, maxCircleRadius);
   p.endPos = setParticuleDirection(p);
@@ -159,3 +134,23 @@ function animateParticules(x, y) {
       offset: 0
     });
 }
+
+let render = anime({
+  duration: Infinity,
+  update: function() {
+    ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+  }
+});
+
+document.addEventListener(
+  tap,
+  function(e) {
+    render.play();
+    updateCoords(e);
+    animateParticules(pointerX, pointerY);
+  },
+  false
+);
+
+setCanvasSize();
+window.addEventListener("resize", setCanvasSize, false);

@@ -1,37 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-  /**
-   * display TOC
-   */
-  // main of scroll
-  window.addEventListener(
-    "scroll",
-    debounce(function() {
-      const curTop = window.scrollY;
-      scrollPercent(curTop);
-    }, 200),
-    {
-      passive: true
-    }
-  );
-
-  if (document.querySelectorAll(".toc-link").length) {
-    let tocList = document
-      .querySelector(".post-content")
-      .querySelectorAll("h1, h2, h3, h4, h5, h6");
-
-    window.addEventListener(
-      "scroll",
-      debounce(function() {
-        findHeadPosition(tocList, window.scrollY);
-      }, 200),
-      {
-        passive: true
-      }
-    );
-  }
-
   // toggle sidebar nav and panel
-  document.querySelectorAll(".sidebar-nav li").forEach(el => {
+  document.querySelectorAll(".sidebar-nav li").forEach((el) => {
     el.onclick = function() {
       const activeTabClass = "sidebar-nav-active";
       const activePanelClass = "sidebar-panel-active";
@@ -48,20 +17,18 @@ document.addEventListener("DOMContentLoaded", function() {
       this.classList.add(activeTabClass);
     };
   });
+  /**
+   * display TOC
+   */
+  // main of scroll
+  if (document.querySelectorAll(".toc-link").length) {
+    let tocList = document
+      .querySelector(".post-content")
+      .querySelectorAll("h1, h2, h3, h4, h5, h6");
 
-  // progress
-  function scrollPercent(curTop) {
-    const bodyHeight = document.body.clientHeight;
-    const windowHeight = window.innerHeight;
-    let percent = 0;
-    if (bodyHeight > windowHeight) {
-      percent = Math.floor((curTop / (bodyHeight - windowHeight)) * 100);
-    } else {
-      percent = 100;
-    }
-    document.querySelector(".progress-num").innerText = percent;
-    document.querySelector(".post-toc-progress .progress-bar").style.width =
-      percent + "%";
+    window.addEventListener("scroll", function() {
+      findHeadPosition(tocList, window.scrollY);
+    });
   }
 
   function updateAnchor(anchor) {
@@ -71,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function activeLink(link) {
-    document.querySelectorAll(".toc-item").forEach(item => {
+    document.querySelectorAll(".toc-item").forEach((item) => {
       item.classList.remove("active");
     });
     let linkParent = link.parentNode;
