@@ -106,9 +106,10 @@ menu:
   categories:
     path: /categories
     icon: icon-folder-2-line
-  about:
-    path: /about
-    icon: icon-information-line
+  custom:
+    title: 文档
+    path: https://blog.sernikki.cn/about/
+    icon: icon-settings-line
 
 # archive
 archive:
@@ -130,7 +131,8 @@ tags:
   Laravel: "#F4645F"
 
 categories:
-  笔记: dimgray
+  节气物语: "#66ccff"
+  
 
 # link
 # -------
@@ -138,18 +140,18 @@ preload:
   style:
     - /css/hexo-theme-yun.css
   script:
-    - /js/yun-boot.js
+    # - /js/yun-boot.js
     - /js/utils.js
     - /js/hexo-theme-yun.js
 
 prefetch:
-  style:
-    - /css/prism.css
+  # style:
+  #   - /css/prism.css
   script:
     - /js/toc.js
 
 dns_prefetch:
-  - https://cos.yunyoujun.cn
+  # - https://cos.yunyoujun.cn
 
 # do more(TCP handshake...) than dns-fetch
 preconnect:
@@ -161,7 +163,7 @@ css:
 
 # scripts loaded in the end of the body
 js:
-  - /js/yun-boot.js
+  # - /js/yun-boot.js
   - /js/utils.js
   - /js/hexo-theme-yun.js
 
@@ -173,42 +175,38 @@ head:
   js:
     base:
       aplayer: //cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js
-      loadAplayer: /js/loadAplayer.js
+      loadAplayer: /js/Aplayer.js
     async: 
     defer:
 
 live2d:
   enable: false
-# cdn for third-party library (always include)
-cdn:
-  # you need change it to yourself
-  css:
-  # font
-  # font: https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap
-  # font: https://fonts.loli.net/css?family=Montserrat
-  # icon
-  # material-design-icons: https://fonts.googleapis.com/icon?family=Material+Icons+Outlined
-  # markdown
-  # github-markdown-css: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css
-  # star-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css/dist/planet/planet-markdown.min.css
-  # blood-markdown-css: https://cdn.jsdelivr.net/npm/star-markdown-css/dist/blood/blood-common.min.css
-  js:
-    base:
-    async:
-      iconfont: //at.alicdn.com/t/font_1140697_h3ruvprb06.js
-    defer:
+
+
 
 # cdn for third-party library (alternative include)
 vendors:
   algolia_search: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
   instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
   anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
-  valine_js: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
+  minivaline_js: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
   scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
+  katex:
+    js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
+    css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
+    auto_render: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js
+    copy_tex:
+      css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css
+      js: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
+  aplayer:
+    css: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
+    js: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
+    meting: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+  trianglify: https://cdn.jsdelivr.net/npm/trianglify@latest/dist/trianglify.min.js
   fireworks: /js/ui/fireworks.js
-  rymd: /js/ui/rymd.js
   search: /js/search/index.js
-  toc: /js/toc.js
+  sidebar: /js/sidebar.js
 
 # UI
 # custom your color in colors
@@ -222,7 +220,23 @@ fireworks:
     # - '0, 8, 55'
 
 # https://codepen.io/hakimel/pen/bzrZGo
-rymd: false
+# rymd: false
+
+# https://github.com/qrohlf/trianglify
+# 多边形背景
+trianglify:
+  enable: false
+  cell_size: 75
+  width: 800
+  height: 600
+  palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'
+  opacity: 0.5
+
+cursor:
+  enable: true
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
 
 # You can see effect in https://scrollrevealjs.org/
 scrollreveal: true
@@ -231,6 +245,7 @@ bg_image:
   enable: true
   url: https://i.loli.net/2020/03/18/YL4hgDZMzXTNCf5.jpg # recomend image related to your mode
   blur: 30px
+  # opacity: 0.8
 
 # Reward (Donate)
 reward_settings:
@@ -312,7 +327,7 @@ footer:
 
 # Post meta display settings
 post_meta:
-  item_text: true
+  item_text: false
   created_at: true
   updated_at: true
   categories: true
@@ -445,4 +460,15 @@ google_analytics:
 #公告功能
 notice:
   enable: true
-  content: 遇见.
+  content: 永远留着这个冬天的你们，永远铭刻在了我们的心里.
+
+live_time:
+    enable: true
+    prefix: 神崎日照の小窝已经萌萌哒地运行
+    suffix: (●'◡'●)
+    start_time: "2020-03-13T11:40:00"
+
+mourn:
+  enable: true
+  days:
+    - "4-4"

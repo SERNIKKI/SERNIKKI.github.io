@@ -44,6 +44,7 @@ links:
     blog: Arn0自留地
     desc: Live your life with passion. With 三倍Ice Cream !!!
     email: comment@noreply.github.com
+    color: "#a1d0e0"
   
   - url: https://ddindex.github.io
     avatar: https://ddindex.github.io/images/avatar.jpg
@@ -62,6 +63,7 @@ links:
     color: "#90c9f5"
 
 placeholder: 是大佬！awsl # 默认对友链的描述
+tip: 友链加载中～如失败请刷新重试～
 ---
 
 ## 友链说明
