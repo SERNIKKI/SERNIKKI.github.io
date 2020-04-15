@@ -22,7 +22,7 @@ favicon: /title.jpg
 
 # Posts / Categories / Tags in sidebar.
 sidebar:
-  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
+  bg_image: https://cdn.jsdelivr.net/gh/sernikki/MyMp3/img/ty.jpg
 
 site_state: true
 
@@ -243,9 +243,9 @@ scrollreveal: true
 
 bg_image:
   enable: true
-  url: https://i.loli.net/2020/03/18/YL4hgDZMzXTNCf5.jpg # recomend image related to your mode
-  blur: 30px
-  # opacity: 0.8
+  url: https://cdn.jsdelivr.net/gh/sernikki/MyMp3/img/bg.jpg # recomend image related to your mode
+  # blur: 30px
+  opacity: 0.8
 
 # Reward (Donate)
 reward_settings:
@@ -425,16 +425,14 @@ symbols_count_time:
 
 # search
 search:
-  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
+  bg_image: https://cdn.jsdelivr.net/gh/sernikki/MyMp3/img/search.png
 
 engine_search:
-  enable: true
-  href: "https://www.google.com/search?q=site:"
-  domain: bolg.sernikki.cn
+  enable: false
 
 # https://github.com/wzpan/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   src: /js/search/local-search.js
 
 # https://github.com/oncletom/hexo-algolia

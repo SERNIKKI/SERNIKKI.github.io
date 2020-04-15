@@ -109,7 +109,7 @@ deploy:
   branch: master
 
   live2d:
-  enable: true
+  enable: false
   # 推荐使用 jsdelivr 的 CDN 来加载
   scriptFrom: jsdelivr
   pluginRootPath: live2dw/
