@@ -1,28 +1,35 @@
 // https://github.com/YunYouJun/hexo-theme-yun
+// YunYouJun <me@yunyoujun.cn>
+
 function random(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-function generateBanner(banner) {
+function generateBanner(title) {
   let sumH = 0;
-  let bannerContainer = document.querySelector(".banner");
   let lineTop = document.querySelector(".vertical-line-top");
   let lineBottom = document.querySelector(".vertical-line-bottom");
-  for (let i = 0; i < banner.length; i++) {
+  for (let i = 0; i < title.length; i++) {
+    const char = title[i];
     let charBox = document.createElement("div");
     let rn = random(1.5, 3.5);
-    charBox.innerHTML = "<span class='char'>" + banner[i] + "</span>";
+    charBox.innerHTML = "<span class='char'>" + char + "</span>";
     let charSize = rn + "rem";
-    bannerContainer.insertBefore(charBox, lineBottom);
+    banner.insertBefore(charBox, lineBottom);
+    charBox.classList.add("char-box");
     if (i % 2 == 0) {
       charBox.classList.add("char-left");
-      charBox.style.setProperty("--banner-char-size", charSize);
       charBox.style.animationName = "char-move-left";
     } else {
       charBox.classList.add("char-right");
-      charBox.style.setProperty("--banner-char-size", charSize);
       charBox.style.animationName = "char-move-right";
     }
+    charBox.style.setProperty("--banner-char-size", charSize);
+
+    const width = window
+      .getComputedStyle(document.getElementsByClassName("char-box")[i])
+      .getPropertyValue("width");
+    charBox.style.setProperty("--banner-empty-border-size", width);
 
     sumH += rn;
   }
@@ -35,6 +42,12 @@ function generateBanner(banner) {
   lineBottom.style.animationName = "extend-line";
 }
 
-setTimeout(() => {
-  generateBanner(CONFIG.title);
-}, 100);
+function initBanner() {
+  if (window.banner) {
+    setTimeout(() => {
+      generateBanner(CONFIG.title);
+    }, 100);
+  }
+}
+
+initBanner();
