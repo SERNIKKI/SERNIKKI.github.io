@@ -1,5 +1,5 @@
 # Todo: mode: ligh | dark | Todo: auto
-mode: light
+mode: auto
 
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
@@ -82,6 +82,12 @@ girls:
 banner:
   title: 神崎日照の小窝
   src: /js/ui/banner.js
+  cloud:
+    enable: true
+    color: "white"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
 
 # Sidebar Avatar
 avatar:
@@ -185,12 +191,37 @@ live2d:
 
 
 # cdn for third-party library (alternative include)
+# vendors:
+#   algolia_search: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
+#   instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
+#   anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
+#   valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
+#   minivaline_js: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
+#   scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
+#   katex:
+#     js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
+#     css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
+#     auto_render: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js
+#     copy_tex:
+#       css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css
+#       js: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
+#   aplayer:
+#     css: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
+#     js: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
+#     meting: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+#   trianglify: https://cdn.jsdelivr.net/npm/trianglify@latest/dist/trianglify.min.js
+#   fireworks: /js/ui/fireworks.js
+#   search: /js/search/index.js
+#   sidebar: /js/sidebar.js
 vendors:
   algolia_search: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
   instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
   anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
   valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
   minivaline_js: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
+  gitalk:
+    css: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
+    js: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
   scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
   katex:
     js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
@@ -203,10 +234,27 @@ vendors:
     css: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
     js: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
     meting: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
-  trianglify: https://cdn.jsdelivr.net/npm/trianglify@latest/dist/trianglify.min.js
-  fireworks: /js/ui/fireworks.js
-  search: /js/search/index.js
-  sidebar: /js/sidebar.js
+  trianglify: https://cdn.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js
+  lightgallery:
+    css: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/css/lightgallery.min.css
+    js: https://cdn.jsdelivr.net/npm/lightgallery.js@latest/dist/js/lightgallery.min.js
+  pjax: https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js
+  crypto_js:
+    all: https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.js
+  wordcloud: https://cdn.jsdelivr.net/npm/wordcloud@1.1.1/src/wordcloud2.js
+  # https://github.com/SukkaW/DisqusJS
+  disqusjs:
+    css: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqusjs.css
+    js: https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqus.js
+  revealjs:
+    css: https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css
+    js: https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js
+    plugin:
+      markdown: https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js
+      notes: https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js
+      highlight:
+        js: https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js
+        monokai: https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/monokai.css
 
 # UI
 # custom your color in colors
@@ -221,6 +269,21 @@ fireworks:
 
 # https://codepen.io/hakimel/pen/bzrZGo
 # rymd: false
+
+# You can import the font you want in the head.
+font:
+  cdn:
+    enable: true
+    lib:
+      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&family=Source+Code+Pro&display=swap
+  serif:
+    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    weight: 900
+  sans_serif:
+    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    weight: 300
+  monospace:
+    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
 
 # https://github.com/qrohlf/trianglify
 # 多边形背景
@@ -244,6 +307,7 @@ scrollreveal: true
 bg_image:
   enable: true
   url: https://cdn.jsdelivr.net/gh/sernikki/MyMp3/img/bg.jpg # recomend image related to your mode
+  dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
   # blur: 30px
   opacity: 0.8
 
@@ -391,23 +455,51 @@ github_issues:
 # Valine
 # You can get your appid and appkey from https://leancloud.cn
 # More info available at https://valine.js.org
+# valine:
+#   enable: true
+#   appId: HpjkX26N6DeY25OLiIAWM3m0-gzGzoHsz # your leancloud application appid
+#   appKey: RzCVnh0hLNROT9GFxK87wyyR # your leancloud application appkey
+#   serverURLs:
+#   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
+#   verify: false # Verification code
+#   placeholder: 大佬呐！看这里~看这里~在这里留言 # comment box placeholder
+#   avatar: # gravatar style
+#   meta: nick,mail,link # custom comment header
+#   pageSize: 10 # pagination size
+#   visitor: true
+#   enableQQ: true
+
 valine:
   enable: true
   appId: HpjkX26N6DeY25OLiIAWM3m0-gzGzoHsz # your leancloud application appid
   appKey: RzCVnh0hLNROT9GFxK87wyyR # your leancloud application appkey
-  serverURLs:
-  notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
   placeholder: 大佬呐！看这里~看这里~在这里留言 # comment box placeholder
   avatar: # gravatar style
-  meta: nick,mail,link # custom comment header
+  # meta:
+  #   - nick
+  #   - mail
+  #   - link
   pageSize: 10 # pagination size
-  visitor: true
+  # lang: zh-CN
+  visitor: false
+  highlight: true
+  recordIP: false
+  # serverURLs:
+  # Emoji See: https://valine.js.org/emoji.html
+  # emojiCDN: //i0.hdslb.com/bfs/emote/
+  # emojiMaps:
+  #   tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
+  #   more...
+  enableQQ: true
 
+  
+  # requiredFields:
+  #   - nick
+  #   - mail
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi:
-  enable: true
+  enable: false
   site_uv: true
   site_uv_icon: icon-user-line
   site_pv: true

@@ -108,31 +108,31 @@ deploy:
   repo: git@github.com:SERNIKKI/SERNIKKI.github.io.git
   branch: master
 
-  live2d:
-  enable: false
-  # 推荐使用 jsdelivr 的 CDN 来加载
-  scriptFrom: jsdelivr
-  pluginRootPath: live2dw/
-  pluginJsPath: lib/
-  pluginModelPath: assets/
-  tagMode: false
-  debug: false
-  model:
-    # 推荐使用 CDN 来加载模型
-    use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
-  display:
-    position: right
-    width: 150
-    height: 300
-  mobile:
-    show: false
-  react:
-    opacity: 0.7
-dialog:
-  # 是否开启对话框
-  enable: true
-  # 是否使用一言
-  hitokoto: true
+#   live2d:
+#   enable: false
+#   # 推荐使用 jsdelivr 的 CDN 来加载
+#   scriptFrom: jsdelivr
+#   pluginRootPath: live2dw/
+#   pluginJsPath: lib/
+#   pluginModelPath: assets/
+#   tagMode: false
+#   debug: false
+#   model:
+#     # 推荐使用 CDN 来加载模型
+#     use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+#   display:
+#     position: right
+#     width: 150
+#     height: 300
+#   mobile:
+#     show: false
+#   react:
+#     opacity: 0.7
+# dialog:
+#   # 是否开启对话框
+#   enable: true
+#   # 是否使用一言
+#   hitokoto: true
 
 symbols_count_time:
   symbols: true
