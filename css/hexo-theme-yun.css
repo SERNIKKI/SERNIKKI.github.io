@@ -37,6 +37,9 @@
 .text-center {
   text-align: center;
 }
+.text-uppercase {
+  text-transform: uppercase;
+}
 body {
   font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
   font-weight: 300;
@@ -793,6 +796,7 @@ input {
   margin: 0 1rem;
   padding: 1rem;
   background-color: var(--post-block-bg-color);
+  backdrop-filter: blur(10px);
 }
 @media screen and (max-width: 768px) {
   .post-block {
@@ -1138,10 +1142,10 @@ input {
   transition-duration: 0.2s;
   transition-delay: 0s;
   background-color: rgba(255,255,255,0.9);
-  box-shadow: 0 1px 8px rgba(255,255,255,0.1);
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 .post-card:hover {
-  box-shadow: 0 1px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 0px 25px rgba(0,0,0,0.05);
 }
 .post-card-header {
   padding-top: 0.5rem;
@@ -1210,6 +1214,27 @@ input {
 .post-top-icon .icon {
   width: 1.5rem;
   height: 1.5rem;
+}
+pre[class*='language-'] {
+  position: relative;
+}
+pre[class*='language-']:hover .copy-btn {
+  opacity: 1;
+}
+.copy-btn {
+  opacity: 0;
+  color: #808080;
+  cursor: pointer;
+  line-height: 1.5;
+  padding: 1px 4px;
+  transition: opacity 0.2s;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border-radius: 4px;
+}
+.copy-btn:hover {
+  background-color: rgba(255,255,255,0.1);
 }
 .post-collapse {
   position: relative;
@@ -1381,6 +1406,10 @@ input {
 .markdown-body {
   color: var(--hty-text-color) !important;
   font-weight: 300;
+  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
+}
+.markdown-body pre {
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
 }
 .post-nav {
   display: flex;
@@ -1909,7 +1938,7 @@ input {
   text-decoration: underline;
 }
 .search-popup {
-  background-image: url("https://cdn.jsdelivr.net/gh/sernikki/MyMp3/img/search.png");
+  backdrop-filter: blur(30px);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2059,9 +2088,6 @@ input {
     background-color: rgba(27,31,46,0.95);
     background-image: none;
   }
-  :root:not([data-user-color-scheme]) .search-popup {
-    background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain-blur-30px.jpg");
-  }
   :root:not([data-user-color-scheme]) .post-title-link {
     color: #ffcfff;
   }
@@ -2136,9 +2162,6 @@ input {
 [data-user-color-scheme='dark'] .sidebar {
   background-color: rgba(27,31,46,0.95);
   background-image: none;
-}
-[data-user-color-scheme='dark'] .search-popup {
-  background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain-blur-30px.jpg");
 }
 [data-user-color-scheme='dark'] .post-title-link {
   color: #ffcfff;
