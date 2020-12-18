@@ -9,3 +9,6 @@ categories:
     - 数据结构
 ---
 
+暂时鸽了（bushi）
+
+<!-- more -->

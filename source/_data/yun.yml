@@ -7,8 +7,13 @@ mode: auto
 # color
 colors:
   primary: "#FFBBFF"
+  # bg: "#D084A6"
   # primary: "#6200ee"
   selection_bg: "#FFF68F"
+  tag_start_color: "#999999"
+  tag_end_color: "#0078E7"
+  dark:
+    block: "#1b1f2e"
   # tag_start_color:
   # tag_end_color:
 
@@ -23,8 +28,19 @@ favicon: /title.jpg
 # Posts / Categories / Tags in sidebar.
 sidebar:
   bg_image: https://cdn.jsdelivr.net/gh/sernikki/MyMp3/img/ty.jpg
+  bg_position: bottom 1rem center
+  tagcloud:
+    enable: false
+    amount: 20
 
-site_state: true
+# site_state: true
+# 目录
+toc:
+  list_number: true
+  max_depth: 6
+  min_depth: 1
+  # placeholder: 很遗憾，咱没写啥目录
+  collapse: true
 
 # Social Links.
 social:
@@ -60,6 +76,13 @@ social:
   # Instagram: https://instagram.com/yourname || instagram
   # Skype: skype:yourname?call|chat || skype
 
+#代码高亮
+codeblock:
+  prismjs:
+    light: default
+    dark: tomorrow
+
+#友链
 # Extra links
 pages:
   我的小伙伴们:
@@ -79,9 +102,12 @@ anonymous_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg
 girls:
   enable: true
 
+#标语动画
 banner:
-  title: 神崎日照の小窝
+  enable: true
+  title: 蕾咪の小窝
   src: /js/ui/banner.js
+  border: true
   cloud:
     enable: true
     color: "white"
@@ -89,16 +115,23 @@ banner:
     enable: true
     icon: icon-arrow-down-s-line
 
+#头像
 # Sidebar Avatar
 avatar:
   enable: true
-  url: /NIKKI.jpg
+  url: /amiya.jpg
   # If true, the avatar would be dispalyed in circle.
   rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
+  mickey_mouse: false
+  status:
+    enable: true
+    emoji: 😭
+    message: 止步于此，彳亍不前
 
 # main menu navigation
+#菜单
 menu:
   home:
     path: /
@@ -139,6 +172,46 @@ tags:
 categories:
   节气物语: "#66ccff"
   
+# post type
+types:
+  link:
+    color: blue
+    icon: icon-external-link-line
+  bilibili:
+    color: "#FF8EB3"
+    icon: icon-bilibili-line
+  douban:
+    color: "#007722"
+    icon: icon-douban-line
+  github:
+    color: black
+    icon: icon-github-line
+  netease-cloud-music:
+    color: "#C10D0C"
+    icon: icon-netease-cloud-music-line
+  notion:
+    color: black
+    icon: icon-notion
+  twitter:
+    color: "#1da1f2"
+    icon: icon-twitter-line
+  wechat:
+    color: "#1AAD19"
+    icon: icon-wechat-2-line
+  weibo:
+    color: "#E6162D"
+    icon: icon-weibo-line
+  yuque:
+    color: "#25b864"
+    icon: icon-yuque
+  zhihu:
+    color: "#0084FF"
+    icon: icon-zhihu-line
+
+# post_card
+#自定义文章卡片透明度
+post_card:
+  opacity: 0.9
 
 # link
 # -------
@@ -154,7 +227,7 @@ prefetch:
   # style:
   #   - /css/prism.css
   script:
-    - /js/toc.js
+    - /js/sidebar.js
 
 dns_prefetch:
   # - https://cos.yunyoujun.cn
@@ -188,31 +261,7 @@ head:
 live2d:
   enable: false
 
-
-
 # cdn for third-party library (alternative include)
-# vendors:
-#   algolia_search: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
-#   instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
-#   anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
-#   valine_js: https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
-#   minivaline_js: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
-#   scrollreveal: https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js
-#   katex:
-#     js: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
-#     css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
-#     auto_render: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js
-#     copy_tex:
-#       css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css
-#       js: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
-#   aplayer:
-#     css: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
-#     js: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
-#     meting: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
-#   trianglify: https://cdn.jsdelivr.net/npm/trianglify@latest/dist/trianglify.min.js
-#   fireworks: /js/ui/fireworks.js
-#   search: /js/search/index.js
-#   sidebar: /js/sidebar.js
 vendors:
   algolia_search: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
   instant_search: https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
@@ -260,6 +309,7 @@ vendors:
 # custom your color in colors
 fireworks:
   enable: true
+  src: /js/ui/fireworks.js
   colors:
     - "138, 43, 226"
     - "218, 112, 214"
@@ -271,6 +321,7 @@ fireworks:
 # rymd: false
 
 # You can import the font you want in the head.
+#字体
 font:
   cdn:
     enable: true
@@ -302,7 +353,13 @@ cursor:
   text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
 
 # You can see effect in https://scrollrevealjs.org/
-scrollreveal: true
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - .post-content img
+
+smoothScroll: true
 
 bg_image:
   enable: true
@@ -349,6 +406,7 @@ creative_commons:
   license: by-nc-sa
   language: deed.zh
   post: true
+  clipboard: false
 
 # AddThis Share, See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
@@ -384,7 +442,7 @@ footer:
   # http://www.beian.miit.gov.cn
   beian:
     enable: true
-    icp: 豫ICP备20006097号
+    icp: 豫ICP备20006097-1号
 
   # Any custom text can be defined here.
   # custom_text: Hosted by <a href="https://pages.coding.me" rel="noopener" target="_blank">Coding Pages</a>
@@ -409,6 +467,11 @@ say:
   api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
   # src is the script
   src: /js/say.js
+# https://developer.hitokoto.cn/sentence/
+  hitokoto:
+    enable: true
+    api: https://v1.hitokoto.cn
+    # api: https://v1.hitokoto.cn?c=a&c=b&c=c&c=d&c=k
 
 # you can new JSON file in your blog root folder
 # example: source/data/sentences.json
@@ -439,6 +502,7 @@ say:
 # -------
 comment:
   enable: true
+  icon: icon-chat-3-line
   tips:
     - 若您无 GitHub 账号，可直接在下方匿名评论。
     - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
@@ -550,7 +614,7 @@ google_analytics:
 #公告功能
 notice:
   enable: true
-  content: 永远留着这个冬天的你们，永远铭刻在了我们的心里.
+  content: 世间为舞台,冠笄皆伶人
 
 live_time:
     enable: true

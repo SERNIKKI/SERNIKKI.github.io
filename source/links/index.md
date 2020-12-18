@@ -15,7 +15,7 @@ links:
     color: "#0078e7" #代表色
 
   - url: https://blog.badapple.pro/
-    avatar: https://i.loli.net/2020/03/14/iuEN8jD9Ixs4gqP.jpg
+    avatar: https://cdn.jsdelivr.net/gh/OrientalFantasy/file/logo/logo-640.jpg
     name: 东方幻梦
     blog: ORIENTAL FANTASY
     desc: 只是当时已惘然

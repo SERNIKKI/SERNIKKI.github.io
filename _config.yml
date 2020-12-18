@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 神崎日照の小窝
+title: 蕾咪の小窝
 # subtitle: 忘川之上，桑梓之下，一半是光，一半是影。
 description: 忘川之上，桑梓之下，一半是光，一半是影。
 keywords:
@@ -50,13 +50,13 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+# highlight:
+#   enable: true
+#   line_number: true
+#   auto_detect: false
+#   tab_replace: ''
+#   wrap: true
+#   hljs: false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -139,3 +139,14 @@ symbols_count_time:
   time: true
   total_symbols: true
   total_time: true
+
+#代码高亮
+#关闭 highlight
+highlight:
+  enable: false
+# 启用 prism
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: false
+  tab_replace: ""
