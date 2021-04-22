@@ -54,10 +54,10 @@ links:
     email: notifications@github.com
     color: "#AB82FF"
 
-  - url: https://hehejun.cn
-    avatar: https://blog.hehejun.cn/img.jpg
-    name: 呵呵君
-    blog: Hehejun's Blog
+  - url: https://gugumoe.cc/
+    avatar: https://blog.gugumoe.cc/img.jpg
+    name: 咕谷酱的博客
+    blog: GuGu's Blog
     desc: 世界に忘れられた~
     email: cnemcx@163.com
     color: "#90c9f5"
@@ -74,9 +74,9 @@ tip: 友链加载中～如失败请刷新重试～
 
 ```bash
 url: https://blog.sernikki.cn
-avatar: https://i.loli.net/2020/03/13/xzKUC1NEj5OicfA.jpg
+avatar: https://cdn.jsdelivr.net/gh/sernikki/MyMp3/img/amiya.jpg
 name: SERNIKKI
-blog: 神崎日照の小窝
+blog: 蕾米の小窝
 desc: 忘川之上，桑梓之下，一半是光，一半是影。
 email: badremilia@foxmail.com
 color: "#00f5ff"
