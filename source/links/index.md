@@ -62,6 +62,22 @@ links:
     email: cnemcx@163.com
     color: "#90c9f5"
 
+  - url: http://www.shuangxing.top
+    avatar: http://marisa-kirisame.gitee.io/phw/Avatar.jpg
+    name: 雾雨霜星
+    blog: 雾雨霜星
+    desc: 雾间觉雨，霜空望星
+    email: 2496760896@qq.com
+    color: "#9400D3"
+  
+  - url: www.qingzinai.com
+    avatar: http://www.qingzinai.com/images/Dorothy.jpg
+    name: 紫奈
+    blog: 紫奈の肥宅屋
+    desc: 只有付出才能得到,即是等价交换.
+    email:
+    color: "#E6E6FA"
+
 placeholder: 是大佬！awsl # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～
 ---
@@ -74,9 +90,9 @@ tip: 友链加载中～如失败请刷新重试～
 
 ```bash
 url: https://blog.sernikki.cn
-avatar: https://cdn.jsdelivr.net/gh/sernikki/MyMp3/img/amiya.jpg
+avatar: https://blog.sernikki.cn/amiya.jpg
 name: SERNIKKI
-blog: 蕾米の小窝
+blog: 蕾咪の小窝
 desc: 忘川之上，桑梓之下，一半是光，一半是影。
 email: badremilia@foxmail.com
 color: "#00f5ff"
