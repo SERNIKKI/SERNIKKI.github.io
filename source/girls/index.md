@@ -1,7 +1,7 @@
 ---
 layout: girls
-title: Lovely Girls
-date: 2020-03-16 17:10:14
+title: girls
+date: 2022-04-19 18:06:29
 girls:
     # - name: Remilia
     #   avatar: https://i.loli.net/2020/03/16/8m5d9w2yXGINLE7.png #头像链接

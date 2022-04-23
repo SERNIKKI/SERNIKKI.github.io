@@ -1,0 +1,459 @@
+mode: auto
+
+avatar:
+  enable: true
+  url: /images/amiya.jpg
+  rounded: true
+  opacity: 1
+  mickey_mouse: false
+  status:
+    enable: true
+    emoji: ❤️
+    message: w-a-w!.
+
+colors:
+  primary: "#FFBBFF"
+  # bg: "#D084A6"
+  # primary: "#6200ee"
+  selection_bg: "#FFF68F"
+  tag_start_color: "#999999"
+  tag_end_color: "#0078E7"
+  dark:
+    block: "#1b1f2e"
+  # tag_start_color:
+  # tag_end_color:
+
+tags:
+  Vue: "#4fc08d"
+  Hexo: "#0E834D"
+  CSS: "#5298d1"
+  Node.js: "#026E00"
+  Git: "#F14E32"
+  React: "#61dafb"
+  Python: "#3776ab"
+  PHP: "#8892BF"
+  VS Code: "#0066B8"
+  JavaScript: "#F4DF4F"
+  TypeScript: "#317AC6"
+  Laravel: "#F4645F"
+
+categories:
+  节气物语: "#66ccff"
+
+# head:
+  # css:
+  #   aplayer: //cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css
+  # js:
+  #   base:
+  #     aplayer: //cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js
+  #     # loadAplayer: /js/Aplayer.js
+  #   async: 
+  #   defer:
+
+# # favicon: /favicon.ico
+
+# cdn:
+#   pre: ""
+#   css:
+#   js:
+#     base:
+#     async:
+#       # 默认引入的图标资源，使用 iconfont
+#       iconfont: //at.alicdn.com/t/font_1140697_dxory92pb0h.js
+#     defer:
+
+preload:
+  style:
+    - /css/hexo-theme-yun.css
+  script:
+    - /js/hexo-theme-yun.js
+
+prefetch:
+  script:
+    - /js/sidebar.js
+
+# dns_prefetch:
+#   - https://cos.yunyoujun.cn
+
+# do more(TCP handshake...) than dns-fetch
+preconnect:
+  - https://cdn.jsdelivr.net
+
+reward:
+  enable: true
+  comment: 赞助一下qaq
+  methods:
+    - name: 支付宝
+      path: https://i.loli.net/2020/03/13/qyzsbt6Y8m2jGTS.jpg
+      color: "#00A3EE"
+      icon: icon-alipay-line
+    - name: 微信支付
+      path: https://i.loli.net/2020/03/13/awNfk63YgLDUJ5Q.jpg
+      color: "#2DC100"
+      icon: icon-wechat-pay-line
+
+comment:
+  candidates:
+    - waline
+    # - giscus
+  tips:
+    - 若您无 GitHub 账号，可直接在下方匿名评论。
+    - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+    - 若没有本文 Issue，您可以使用 Comment 模版新建。
+
+# valine:
+#   enable: true
+#   appId: HpjkX26N6DeY25OLiIAWM3m0-gzGzoHsz # your leancloud application appid
+#   appKey: RzCVnh0hLNROT9GFxK87wyyR # your leancloud application appkey
+#   placeholder: 大佬呐！看这里~看这里~在这里留言 # comment box placeholder
+#   avatar: # gravatar style
+#   # meta:
+#   #   - nick
+#   #   - mail
+#   #   - link
+#   pageSize: 10 # pagination size
+#   # lang: zh-CN
+#   visitor: true
+#   highlight: true
+#   recordIP: false
+#   emoji:
+#     - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/bilibili/
+#     - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/weibo/
+#     - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/qq/
+#   requiredMeta: ["nick"]
+#   # serverURLs:
+#   # Emoji See: https://valine.js.org/emoji.html
+#   # emojiCDN: //i0.hdslb.com/bfs/emote/
+#   # emojiMaps:
+#   #   tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
+#   #   more...
+#   enableQQ: true
+waline:
+  enable: true
+  serverURL: https://waline.sernikki.cn
+  visitor: true
+  comment: true
+  emoji:
+    - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/bilibili/
+    - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/weibo/
+    - https://cdn.jsdelivr.net/gh/walinejs/emojis@latest/qq/
+  locale:
+    placeholder: 大佬呐！看这里~看这里~在这里留言～
+  requiredMeta: ["nick"]
+
+github_issues:
+  enable: true
+  username: SERNIKKI
+  repository: SERNIKKI.github.io
+  filters: is:issue
+
+github_discussions:
+  enable: false
+
+# disqusjs:
+#   enable: false
+#   shortname: yunyoujun
+#   apikey: ouoGQCaamOKdJgyZU5DKcpFnRIg3SNzvk0nwygPtlcTRJuE68c8igvrZGW4wAJoN
+
+# https://github.com/laymonage/giscus
+
+# giscus:
+#   enable: false
+#   repo: YunYouJun/yunyoujun.github.io
+#   repo-id:
+#   category-id:
+#   mapping: pathname
+#   reactions-enabled: 1
+#   emit-metadata: 0
+#   theme: light
+
+engine_search:
+  enable: false
+
+# If you want to use it, you need config algolia appID in _config.yml!!!
+# https://github.com/oncletom/hexo-algolia
+algolia_search:
+  enable: true
+  # ...
+
+# google_analytics:
+#   enable: true
+#   id: G-1LL0D86CY9
+
+# google_adsense:
+#   enable: true
+#   client: ca-pub-2245427233262012
+
+
+albums:
+  enable: true
+
+girls:
+  enable: true
+
+
+
+cursor:
+  enable: true
+
+baidu_push: true
+
+google_tagmanager:
+  enable: true
+  id: GTM-M9KWR9L
+
+# wordcount:
+#   enable: true
+
+
+# Social Links.
+social:
+  - name: RSS
+    # set rss in your root config
+    # https://github.com/hexojs/hexo-generator-feed
+    link: atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
+  - name: GitHub
+    link: https://github.com/SERNIKKI
+    icon: icon-github-line
+    color: "#181717"
+  - name: E-Mail
+    link: https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=badremilia@foxmail.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+  - name: 网易云音乐
+    link: https://music.163.com/#/user/home?id=1369682531
+    icon: icon-netease-cloud-music-line
+    color: "#C10D0C"
+  - name: 哔哩哔哩动画
+    link: https://space.bilibili.com/36597219
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+  # bangumi: https://bangumi.tv/user/yunyoujun || television
+  # pixiv: https://pixiv.me/yunyoujun || paint-brush
+  # Google: https://plus.google.com/yourname || google
+  # Twitter: https://twitter.com/yunyoujun || twitter
+  # FB Page: https://www.facebook.com/yourname || facebook
+  # StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+  # YouTube: https://youtube.com/yourname || youtube
+  # Instagram: https://instagram.com/yourname || instagram
+  # Skype: skype:yourname?call|chat || skype
+
+#标语动画
+banner:
+  enable: true
+  title: 蕾咪の小窝
+  border: true
+  cloud:
+    enable: true
+    color: "white"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+
+font:
+  cdn:
+    enable: true
+    lib:
+      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
+  serif:
+    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    weight: 900
+  sans_serif:
+    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    weight: 400
+  monospace:
+    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
+
+bg_image:
+  enable: true
+  url: https://cdn.jsdelivr.net/gh/sernikki/MyMp3/img/bg.jpg # recomend image related to your mode
+  dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
+  # blur: 30px
+  opacity: 0.8
+
+# search
+search:
+  modal: true
+  bg_image: https://cdn.jsdelivr.net/gh/sernikki/MyMp3/img/search.png
+  dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
+
+# 多边形背景
+trianglify:
+  enable: false
+  cell_size: 75
+  width: 800
+  height: 600
+  palette: '["YlGnBu", "GnBu", "Purples", "Blues"]'
+  opacity: 0.5
+
+fireworks:
+  enable: true
+  src: /js/ui/fireworks.js
+  colors:
+    - "138, 43, 226"
+    - "218, 112, 214"
+    - "160, 32, 240"
+    # - '3, 28, 95'
+    # - '0, 8, 55'
+
+scrollreveal:
+  enable: true
+  targets:
+    - .post-card
+    - .markdown-body img
+
+# cursor:
+#   enable: false
+#   default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+#   pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+#   text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+
+sidebar:
+  bg_image: https://cdn.jsdelivr.net/gh/sernikki/MyMp3/img/ty.jpg
+  bg_position: bottom 1rem center
+  tagcloud:
+    enable: false
+    amount: 20
+
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: icon-archive-line
+    - type: categories
+      path: /categories/
+      icon: icon-folder-2-line
+    - type: tags
+      path: /tags/
+      icon: icon-price-tag-3-line
+    # - path: https://www.yunyoujun.cn
+    #   icon: icon-cloud-line
+    #   count: 你猜
+  custom:
+    title: 关于
+    path: https://blog.sernikki.cn/about/
+    icon: icon-settings-line
+
+pages:
+  - name: 我的小伙伴们
+    url: /links/
+    icon: icon-genderless-line
+    color: dodgerblue
+  - name: 喜欢的女孩子
+    url: /girls/
+    icon: icon-women-line
+    color: hotpink
+  
+
+post_card:
+  opacity: 0.8
+
+types:
+  link:
+    color: blue
+    icon: icon-external-link-line
+  bilibili:
+    color: "#FF8EB3"
+    icon: icon-bilibili-line
+  douban:
+    color: "#007722"
+    icon: icon-douban-line
+  github:
+    color: black
+    icon: icon-github-line
+  netease-cloud-music:
+    color: "#C10D0C"
+    icon: icon-netease-cloud-music-line
+  notion:
+    color: black
+    icon: icon-notion
+  twitter:
+    color: "#1da1f2"
+    icon: icon-twitter-line
+  wechat:
+    color: "#1AAD19"
+    icon: icon-wechat-2-line
+  weibo:
+    color: "#E6162D"
+    icon: icon-weibo-line
+  yuque:
+    color: "#25b864"
+    icon: icon-yuque
+  zhihu:
+    color: "#0084FF"
+    icon: icon-zhihu-line
+
+post_meta:
+  item_text: false
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
+
+toc:
+  list_number: true
+  max_depth: 6
+  min_depth: 1
+  placeholder: 很遗憾，咱没写啥目录
+  collapse: false
+
+post_edit:
+  enable: false
+  url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
+
+codeblock:
+  copy_btn: true
+
+creative_commons:
+  license: by-nc-sa
+  post: true
+  language: deed.zh
+  clipboard: false
+
+lazyload:
+  enable: true
+
+footer:
+  since: 2020
+
+  # Icon between year and copyright info.
+  icon:
+    # `heart` is recommended with animation in red (#ff0000).
+    name: icon-cloud-line
+    # If you want to animate the icon, set it to true.
+    animated: true
+    # Change the color of icon, using Hex Code.
+    color: "#0078E7"
+
+  powered:
+    # Hexo link (Powered by Hexo).
+    enable: true
+    # Version info of Hexo after Hexo link (vX.X.X).
+    version: true
+
+  # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
+  # http://www.beian.miit.gov.cn
+  beian:
+    enable: true
+    icp: 豫ICP备20006097-1号
+
+say:
+  enable: true
+  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
+  # https://developer.hitokoto.cn/sentence/
+  hitokoto:
+    enable: true
+    api: https://v1.hitokoto.cn
+
+mourn:
+  enable: true
+  days:
+    - "4-4"
+
+wordcloud:
+  enable: true

@@ -2,6 +2,14 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+# # Site
+# title: 蕾咪
+# subtitle: ''
+# description: ''
+# keywords:
+# author: John Doe
+# language: en
+# timezone: ''
 # Site
 title: 蕾咪の小窝
 # subtitle: 忘川之上，桑梓之下，一半是光，一半是影。
@@ -18,9 +26,8 @@ language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://sernikki.github.io
-root: /
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://blog.sernikki.cn/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -57,6 +64,11 @@ future: true
 #   tab_replace: ''
 #   wrap: true
 #   hljs: false
+# prismjs:
+#   enable: false
+#   preprocess: true
+#   line_number: true
+#   tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -82,8 +94,8 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -102,51 +114,36 @@ ignore:
 theme: yun
 
 # Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@github.com:SERNIKKI/SERNIKKI.github.io.git
-  branch: master
+## Docs: https://hexo.io/docs/one-command-deployment
+# deploy:
+#   type: ''
 
-#   live2d:
-#   enable: false
-#   # 推荐使用 jsdelivr 的 CDN 来加载
-#   scriptFrom: jsdelivr
-#   pluginRootPath: live2dw/
-#   pluginJsPath: lib/
-#   pluginModelPath: assets/
-#   tagMode: false
-#   debug: false
-#   model:
-#     # 推荐使用 CDN 来加载模型
-#     use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
-#   display:
-#     position: right
-#     width: 150
-#     height: 300
-#   mobile:
-#     show: false
-#   react:
-#     opacity: 0.7
-# dialog:
-#   # 是否开启对话框
-#   enable: true
-#   # 是否使用一言
-#   hitokoto: true
-
-symbols_count_time:
-  symbols: true
-  time: true
-  total_symbols: true
-  total_time: true
-
-#代码高亮
-#关闭 highlight
+# 关闭 highlight
 highlight:
   enable: false
+  
 # 启用 prism
 prismjs:
   enable: true
   preprocess: true
   line_number: false
   tab_replace: ""
+
+# Note tag (bs-callout).
+note:
+  # Note tag style values:
+  #  - simple    bs-callout old alert style. Default.
+  #  - modern    bs-callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: flat
+  icons: true
+  border_radius: 2
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: 3
+
+deploy:
+  type: git
+  repo: git@github.com:SERNIKKI/SERNIKKI.github.io.git
+  branch: master
