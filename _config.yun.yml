@@ -72,12 +72,13 @@ prefetch:
   script:
     - /js/sidebar.js
 
-# dns_prefetch:
-#   - https://cos.yunyoujun.cn
+dns_prefetch:
+  - https://cos.yunyoujun.cn
 
 # do more(TCP handshake...) than dns-fetch
 preconnect:
   - https://cdn.jsdelivr.net
+
 
 reward:
   enable: true
