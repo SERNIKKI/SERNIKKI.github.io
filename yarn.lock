@@ -880,10 +880,10 @@ hexo-theme-landscape@^0.0.3:
   resolved "https://registry.npmmirror.com/hexo-theme-landscape/-/hexo-theme-landscape-0.0.3.tgz#87d1f4d613da9be5245dad0d4b80479eab70d386"
   integrity sha512-b0Di+TUVs4ESrNX4ULEh9uQmADpO6kr10rIJ2OGZM8suNQNFKdxn+vJUjnLfKkCPJAfVmS7/S83KCNYe4tpoNw==
 
-hexo-theme-yun@^1.10.5:
-  version "1.10.5"
-  resolved "https://registry.yarnpkg.com/hexo-theme-yun/-/hexo-theme-yun-1.10.5.tgz#39bfa448ed1821a347f23b9508e887d977e12eb1"
-  integrity sha512-SsRTSrScFbKk6QIFRskRHXFONDgq8xuCfSP5JXoBowY2eUnjDnqkAN9L9KUdZzfLHagCEdDhCuJKUrOTwXu3Nw==
+hexo-theme-yun@^1.10.9:
+  version "1.10.9"
+  resolved "https://registry.yarnpkg.com/hexo-theme-yun/-/hexo-theme-yun-1.10.9.tgz#913307ad7fe36f3a57a7ae64264a4756a8f0f465"
+  integrity sha512-wUc7HpqEG8r/laEMX9nDIbM/sNXUkTBtL4SBRGgujozyTsGVsrKxojHNuv3rg2y7RXrVZDInrgaIfdgjeDNQbQ==
 
 hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.5.0, hexo-util@^2.6.1:
   version "2.6.1"
